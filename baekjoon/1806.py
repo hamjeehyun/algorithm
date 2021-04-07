@@ -10,7 +10,7 @@ start=0
 end=1
 
 while start != n:
-    if nums_sum[end]-nums_sum[start] >= s:
+    if nums_sum[end]-nums_sum[start] >= s:  
         if end-start < answer:
             answer=end-start
         start+=1
