@@ -67,7 +67,7 @@ for i in range(m):
 
         # 10
         if i+1 < m and j+2 < n:
-            tmp = arr[i][j] + arr[i+1][j] + arr[i][j+1] + arr[i][j+1]
+            tmp = arr[i][j] + arr[i+1][j] + arr[i][j+1] + arr[i][j+2]
             if tmp > answer:
                 answer = tmp
 
@@ -85,7 +85,7 @@ for i in range(m):
 
         # 13
         if i+2 < m and j-1 >= 0:
-            tmp = arr[i][j] + arr[i+1][j] + arr[i+1][j-1] + arr[i+1][j-1]
+            tmp = arr[i][j] + arr[i+1][j] + arr[i+1][j-1] + arr[i+2][j-1]
             if tmp > answer:
                 answer = tmp
 
@@ -94,6 +94,7 @@ for i in range(m):
             tmp = arr[i][j] + arr[i][j+1] + arr[i-1][j+1] + arr[i-1][j+2]
             if tmp > answer:
                 answer = tmp
+                idx=14
 
         # 15
         if i+1 < m and j+2 < n:
