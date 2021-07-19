@@ -35,7 +35,6 @@ class SearcInsertPosition {
         System.out.println("Binary Search >>> " + start);
     }
 
-
     public static void main(String[] args) {
         solutionIterator();
         solutionBinarySearch();
